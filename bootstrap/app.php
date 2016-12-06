@@ -78,6 +78,11 @@ $app->singleton(
 |
 */
 
+$app->register(Eleon\AwesomeApis\Providers\MeaningCloudServiceProvider::class);
+$app->register(Eleon\AwesomeApis\Providers\ClarifaiServiceProvider::class);
+$app->register(Eleon\AwesomeApis\Providers\TwitterServiceProvider::class);
+$app->register(Eleon\AwesomeApis\Providers\MercadoLibreServiceProvider::class);
+
 // $app->register(App\Providers\AppServiceProvider::class);
 // $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);

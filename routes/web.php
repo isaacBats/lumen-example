@@ -14,3 +14,8 @@
 $app->get('/', function () use ($app) {
     return $app->version();
 });
+
+
+$app->get('/search', 'ExampleController@search');
+
+$app->get('/searchByImage', 'ExampleController@searchByImageUrl');
